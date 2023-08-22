@@ -20,3 +20,12 @@ Strumenti:
         - Scrivo il srisultato in pagina
 */ 
 
+const userName = prompt('Inserisci il tuo nome: ');
+const userSurname = prompt('Inserisci il tuo cognome: ');
+const userFavoriteColor = prompt('Inserisci il tuo colore preferito: ');
+const passwordElement = document.getElementById('password');
+
+const password = `${userName}${userSurname}${userFavoriteColor}23`;
+
+console.log(password);
+passwordElement.innerHTML = `La tua nuova password è: ${password}`;
