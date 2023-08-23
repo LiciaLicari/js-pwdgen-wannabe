@@ -18,14 +18,25 @@ Strumenti:
         - Genero la psw concatenando le stringhe. Aggiungo '23' alla fine
         - Scrivo il risultato in console
         - Scrivo il srisultato in pagina
+
+        BONUS
+        - Aggiungo key
+        - Sommo key al numero 23
+        - Genero la nuova psw
 */ 
 
 const userName = prompt('Inserisci il tuo nome: ');
 const userSurname = prompt('Inserisci il tuo cognome: ');
 const userFavoriteColor = prompt('Inserisci il tuo colore preferito: ');
+const currentYear = 23;
+const secretKey = 365;
+let finalCode = 23 + 365;
+console.log(finalCode);
+
+
 const passwordElement = document.getElementById('password');
 
-const password = `${userName}${userSurname}${userFavoriteColor}23`;
+const password = `${userName}${userSurname}${userFavoriteColor}${finalCode}`;
 
 console.log(password);
 passwordElement.innerHTML = `La tua nuova password è: ${password}`;
